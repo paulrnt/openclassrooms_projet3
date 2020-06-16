@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*entête*/
+header {
+  background: #579C87;
+  width: 100%;
+  height: 240px; }
+
+.logo {
+  text-align: center;
+  line-height: 240px;
+  font-size: 5em;
+  color: #FDCB46;
+  font-family: 'Paytone One', sans-serif;
+  letter-spacing: -3px; }
+
+a {
+  text-decoration: none; }
+
+/*contenu principal page accueil*/
+/*blocs menus*/
+main {
+  padding-bottom: 50px; }
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 100px 0 0 0; }
+  .menu__bloc {
+    height: 760px;
+    width: 540px;
+    margin-bottom: 100px;
+    text-align: center;
+    align-items: flex-end;
+    box-shadow: 1px 1px 12px #555; }
+  .menu__bloc--1 {
+    background-color: #FCDFDB;
+    line-height: 10px; }
+  .menu__bloc--1 i {
+    background: #f15861;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #f15861 0%, #f8a183 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #f15861 0%, #f8a183 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #f15861 0%, #f8a183 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f15861', endColorstr='#f8a183',GradientType=1 );
+    /* IE6-9 */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; }
+  .menu__bloc--2 {
+    background-color: #FFF5FE; }
+  .menu__bloc--3 {
+    background-color: #F9F9F9; }
+  .menu__bloc--4 {
+    background-color: #FDFFFD; }
+
+.detail {
+  margin-top: 260px;
+  /*blocs menus 1*/
+  /*blocs menus 2*/
+  /*blocs menus 3*/
+  /*blocs menus 4*/ }
+  .detail__menu1 h1 {
+    font-family: 'Devonshire', cursive;
+    font-size: 3em;
+    padding-bottom: 20px; }
+  .detail__menu1 h2 {
+    font-family: 'Kalam', cursive;
+    font-size: 3em;
+    text-transform: uppercase; }
+  .detail__menu2 h1 {
+    font-family: 'Aref Ruqaa', serif;
+    background: #c77412;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #c77412 0%, #905bfd 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #c77412 0%, #905bfd 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #c77412 0%, #905bfd 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c77412', endColorstr='#905bfd',GradientType=1 );
+    /* IE6-9 */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; }
+  .detail__menu2 h2 {
+    font-family: 'Cantata One', serif;
+    font-size: 3em;
+    color: #C77412; }
+  .detail__menu3 h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    background: #0000e0;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #0000e0 0%, #0887fb 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0000e0 0%, #0887fb 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0000e0 0%, #0887fb 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000e0', endColorstr='#0887fb',GradientType=1 );
+    /* IE6-9 */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; }
+  .detail__menu3 h2 {
+    font-family: 'Kalam', cursive;
+    font-size: 3em;
+    color: #0887FB; }
+  .detail__menu4 h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 3em;
+    background: #3d9339;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #3d9339 0%, #bfff7e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3d9339 0%, #bfff7e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3d9339 0%, #bfff7e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d9339', endColorstr='#bfff7e',GradientType=1 );
+    /* IE6-9 */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; }
+  .detail__menu4 h2 {
+    font-family: 'Kalam', cursive;
+    font-size: 3em;
+    color: #72BF56; }
+
+/*bouton*/
+.btn {
+  background: #579C87;
+  width: 650px;
+  height: 118px;
+  color: #FDCB46;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+  font-size: 2.5em;
+  line-height: 118px;
+  font-family: 'Roboto', sans-serif; }
+
+/*footer*/
+.footer {
+  background: #579C87;
+  height: 136px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif; }
+  .footer__contenu {
+    margin: 0 40px 0 40px;
+    font-size: 2.5em;
+    line-height: 136px;
+    color: #FDCB46; }
+
+/*# sourceMappingURL=style.css.map */
