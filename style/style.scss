@@ -1,14 +1,35 @@
 $color-primary:#579C87;
 $text-color:#FDCB46;
 
-/*entête*/
+/*-----------------structure-------------------*/
+body{
+    min-height: 100vh;
+    width: auto;
+    margin: auto;
+    overflow-wrap: break-word;
+}
+
 header{
 	background:$color-primary;
 	width: 100%;
 	height: 240px;
-	
 }
 
+main{
+	min-height:100%;
+	margin: auto;
+	position: relative;
+	padding-bottom: 200px;
+}
+
+footer{
+	background:$color-primary;
+	height: 90px;
+	position:fixed;
+	bottom:0;
+	width:100%;
+}
+/*------------------entête--------------------*/
 .logo{
 	text-align: center;
 	line-height: 240px;
@@ -22,27 +43,23 @@ a{
 	text-decoration: none;
 }
 
-
-/*contenu principal page accueil*/
-
-/*blocs menus*/
-main{
-	padding-bottom: 50px;
+/*-------------------------blocs menus----------------------*/
+.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
 }
 
 .menu{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin: (100px 0 0 0);
+	margin: (100px 100px 0 100px);
 	&__bloc{
-	height: 760px;
+	height: 600px;
 	width: 540px;
 	margin-bottom: 100px;
 	text-align: center;
-	align-items: flex-end;
 	box-shadow: 1px 1px 12px #555;
-	}
+	padding-top: 300px;
+    }
 	&__bloc--1{
 	background-color: #FCDFDB;
 	line-height: 10px;
@@ -68,21 +85,23 @@ main{
 }
 
 .detail{
-	margin-top: 260px;
 /*blocs menus 1*/
 	&__menu1 h1{
 		font-family: 'Devonshire', cursive;
 		font-size: 3em;
 		padding-bottom: 20px;
+		color:#3C1218;
 	}
 	&__menu1 h2{
 		font-family: 'Kalam', cursive;
 		font-size: 3em;
 		text-transform: uppercase;
+		color:#3C1218;
 	}
 /*blocs menus 2*/	
 	&__menu2 h1{
 		font-family: 'Aref Ruqaa', serif;
+		font-size: 2em;
 		background: #c77412; /* Old browsers */
 		background: -moz-linear-gradient(left,  #c77412 0%, #905bfd 100%); /* FF3.6-15 */
 		background: -webkit-linear-gradient(left,  #c77412 0%,#905bfd 100%); /* Chrome10-25,Safari5.1-6 */
@@ -130,10 +149,9 @@ main{
 		font-size: 3em;
 		color:#72BF56;
 	}
-
 }
 
-/*bouton*/
+/*-----------------------bouton-----------------------*/
 .btn{
 	background:$color-primary;
 	width: 650px;
@@ -147,18 +165,326 @@ main{
 	font-family: 'Roboto', sans-serif;
 }
 
-
-/*footer*/
+/*--------------------contenu footer---------------------*/
 .footer{
-	background:$color-primary;
-	height: 136px;
 	display: flex;
 	justify-content: space-between;
 	font-family: 'Roboto', sans-serif;
 	&__contenu{
 	margin: (0 40px 0 40px);
-	font-size: 2.5em;
-	line-height: 136px;
+	font-size: 2.3em;
+	line-height: 90px;
 	color:$text-color;
 	}
 }
+
+/*-------------------------DETAILS MENU------------------------*/
+#titre_carte{
+	text-align: center;
+	font-size: 3em;
+	margin-top: 100px;
+	color: #353535;
+	font-family: "arial bold";
+}
+
+.sous_titre{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*-------------------------CARTE 1 LA NOTE ENCHANTEE-------------------*/
+.carte1{
+	text-align: center;
+	background: #FCDFDB;
+	width: 1180px;
+	height: 1680px;
+	margin:auto;
+	padding: (100px 0 100px 0); 
+	box-shadow: 1px 1px 12px #555;
+	color:#3C1218;
+	& i{ 
+	background: rgb(241,88,97); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(241,88,97,1) 0%, rgba(248,161,131,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(241,88,97,1) 0%,rgba(248,161,131,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(241,88,97,1) 0%,rgba(248,161,131,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f15861', endColorstr='#f8a183',GradientType=1 ); /* IE6-9 */
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	} 
+	& h1{
+	font-family: 'Devonshire', cursive;
+	font-size: 4em;
+	line-height: 8px;
+	padding-bottom: 50px;
+	}
+	& h2{
+	font-family: 'Kalam', cursive;
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: center;
+	}
+	& h3{
+	font-family: 'Devonshire', cursive;
+	font-size: 3em;
+	text-align: center;
+	}
+	&__contenu{
+		font-family: 'Kalam', cursive;
+		font-size: 1.8em;
+		text-align: left;
+		padding: (0 100px 50px 100px);
+	}
+	&__plats{
+		display: flex;
+		justify-content: space-between;
+		line-height: 10px;
+	}
+	&__plats__prix{
+		font-weight: bold;	
+	}
+}
+
+/*-------------------------CARTE 2 LA NOTE ENCHANTEE-------------------*/
+.carte2{ 
+	font-family: 'Aref Ruqaa', serif;
+	text-align: center;
+	background: #FFF5FE;
+	width: 1180px;
+	height: 1680px;
+	margin:auto;
+	padding: (100px 0 100px 0); 
+	box-shadow: 1px 1px 12px #555;
+	color:#3C1218;
+	& h1{
+	font-size: 4em;
+	padding-bottom: 50px;
+	background: #c77412; /* Old browsers */
+	background: -moz-linear-gradient(left,  #c77412 0%, #905bfd 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #c77412 0%,#905bfd 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #c77412 0%,#905bfd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c77412', endColorstr='#905bfd',GradientType=1 ); /* IE6-9 */
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	}
+	& h2{
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: center;
+	}
+	&__contenu{
+		font-size: 1.8em;
+		text-align: left;
+		padding: (0 100px 50px 100px);
+	}
+	&__contenu--1{
+		color:#C67412;
+	}
+	&__contenu--2{
+		color:#A56799;
+	}
+	&__contenu--3{
+		color:#6E4CCC;
+	}
+	&__plats{
+		display: flex;
+		justify-content: space-between;
+		line-height: 10px;
+	}
+	&__plats__prix{
+		font-weight: bold;	
+	}
+}
+
+/*-------------------------CARTE 3 LE DELICE DES PAPILLES-------------------*/
+.carte3{
+	font-family: 'Kalam', cursive;
+	text-align: center;
+	background: #EDEFEF;
+	width: 1180px;
+	height: 1680px;
+	margin:auto;
+	padding: (100px 0 100px 0); 
+	box-shadow: 1px 1px 12px #555;
+	color:#000000;
+	& h1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 5em;
+	padding-bottom: 50px;
+	background: rgb(0,0,224); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(0,0,224,1) 0%, rgba(8,135,251,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(0,0,224,1) 0%,rgba(8,135,251,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(0,0,224,1) 0%,rgba(8,135,251,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000e0', endColorstr='#0887fb',GradientType=1 ); /* IE6-9 */
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	}
+	& h2{
+	font-size: 1.8em;
+	text-align: center;
+	}
+	&__contenu{
+		font-size: 1.8em;
+		text-align: left;
+		padding: (0 100px 100px 100px);
+	}
+	&__plats{
+		display: flex;
+		justify-content: space-between;
+		line-height: 10px;
+	}
+	&__plats__prix{
+		font-weight: bold;	
+	}
+}
+
+/*-------------------------CARTE 4 LA PALETTE DU GOUT-------------------*/
+.carte4{
+	font-family: 'Kalam', cursive;
+	text-align: center;
+	background: #FDFFFD;
+	width: 1180px;
+	height: 1680px;
+	margin:auto;
+	padding: (100px 0 100px 0); 
+	box-shadow: 1px 1px 12px #555;
+	color:#000000;
+	& h1{
+	font-size: 5em;
+	font-family: 'Kaushan Script', cursive;
+		background: rgb(61,147,57); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgba(61,147,57,1) 0%, rgba(191,255,126,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgba(61,147,57,1) 0%,rgba(191,255,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgba(61,147,57,1) 0%,rgba(191,255,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d9339', endColorstr='#bfff7e',GradientType=1 ); /* IE6-9 */
+		-webkit-text-fill-color:transparent;
+		-webkit-background-clip:text;
+	}
+}
+
+/*-----------------ANIMATIONS-----------------*/
+
+/*---------------animation menus-------------*/
+.detail {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+    opacity: 1;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.menu__bloc:hover .detail {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    opacity: .8;
+}
+
+/*--------------------animation bouton---------------------*/
+.btn:after {
+    content: '.';
+    animation: dots 1s steps(1, end) infinite;
+}
+  
+  @keyframes dots {
+    0%, 20% {
+      color: rgba(255,0,0,0);				/*couleur point n1 au depart*/
+      text-shadow:
+        .25em 0 0 rgba(0,255,0,0),			/*distance - alignement verticale - flou - couleur point n2 avant le point n1*/
+        .5em 0 0 rgba(0,0,255,0);			/*couleur point n3 avant le point n1*/
+    }
+    40% {
+      color: $text-color;					/*couleur point n1 1ere phase*/
+      text-shadow:
+        .25em 0 0 rgba(0,0,0,0),			/*couleur point n2 1ere phase, apparait en meme temps que le point n1*/
+        .5em 0 0 rgba(0,0,0,0);				/*couleur point n3 1ere phase, apparait en meme temps que le point n1*/
+    }
+    60% {
+      text-shadow:
+        .25em 0 0 $text-color,				/*couleur point n2 1ere phase*/
+        .5em 0 0 rgba(0,0,0,0);				/*couleur point n3 1ere phase, apparait en meme temps que le point n2*/	
+    }
+    80%, 100% {
+      text-shadow:							
+        .25em 0 0 $text-color,				/*couleur point n2 2eme phase*/
+        .5em 0 0 $text-color;             	/*couleur point n3 2eme phase*/
+    }
+}
+
+/*-------------------------animation liens footer-------------------*/
+.footer__contenu:hover {
+    animation: shake 0.5s; /*nature, debut et duree de l'animation*/
+    animation-iteration-count: infinite; /*boucle de l'animation*/
+  }
+
+@keyframes shake {
+     0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+   100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+/*--------------------animation details menus------------------*/
+.sous_titre h2:hover:after {
+    transform: scaleX(1);
+  }
+  .sous_titre h2:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-bottom: solid 4px;
+    transform: scaleX(0);
+    transition: 1s;
+    transform-origin: 0%;
+  }
+
+  /*-----------------------RESPONSIVE------------------------*/
+  /*MEDIA QUERIES*/
+@media screen and (max-width: 900px) {
+
+    header {
+    	height: 100px;
+    }
+    .logo {
+	    text-align: center;
+		line-height: 100px;
+		font-size: 3em;
+    }
+
+	.container{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.menu{
+	margin: (10px 5px 0 5px);
+	&__bloc{
+		width: 100%;
+		height: 300px;
+		text-align: center;
+		padding: 80px 5px 0 5px;
+		font-size: 1em;
+		}
+	}
+
+	.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	}
+
+	footer{
+		height: 90px;
+		position:fixed;
+		bottom:0;
+		width:100%;
+	}
+}	
