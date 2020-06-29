@@ -46,8 +46,8 @@ a{
 /*-------------------------blocs menus----------------------*/
 .container{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-around;
-	align-items: flex-end;
 }
 
 .menu{
@@ -86,20 +86,20 @@ a{
 
 .detail{
 /*blocs menus 1*/
-	&__menu1 h1{
+	&__menu1 h2{
 		font-family: 'Devonshire', cursive;
 		font-size: 3em;
 		padding-bottom: 20px;
 		color:#3C1218;
 	}
-	&__menu1 h2{
+	&__menu1 h3{
 		font-family: 'Kalam', cursive;
 		font-size: 3em;
 		text-transform: uppercase;
 		color:#3C1218;
 	}
 /*blocs menus 2*/	
-	&__menu2 h1{
+	&__menu2 h2{
 		font-family: 'Aref Ruqaa', serif;
 		font-size: 2em;
 		background: #c77412; /* Old browsers */
@@ -110,13 +110,13 @@ a{
 		-webkit-text-fill-color:transparent;
 		-webkit-background-clip:text;
 	}
-	&__menu2 h2{
+	&__menu2 h3{
 		font-family: 'Cantata One', serif;
 		font-size: 3em;
 		color:#C77412;
 	}
 /*blocs menus 3*/
-	&__menu3 h1{
+	&__menu3 h2{
 		font-family: 'Dancing Script', cursive;
 		font-size: 3em;
 		background: rgb(0,0,224); /* Old browsers */
@@ -127,13 +127,13 @@ a{
 		-webkit-text-fill-color:transparent;
 		-webkit-background-clip:text;
 	}
-	&__menu3 h2{
+	&__menu3 h3{
 		font-family: 'Kalam', cursive;
 		font-size: 3em;
 		color:#0887FB;
 	}
 /*blocs menus 4*/
-	&__menu4 h1{
+	&__menu4 h2{
 		font-family: 'Kaushan Script', cursive;
 		font-size: 3em;
 		background: rgb(61,147,57); /* Old browsers */
@@ -144,7 +144,7 @@ a{
 		-webkit-text-fill-color:transparent;
 		-webkit-background-clip:text;
 	}
-	&__menu4 h2{
+	&__menu4 h3{
 		font-family: 'Kalam', cursive;
 		font-size: 3em;
 		color:#72BF56;
@@ -178,7 +178,7 @@ a{
 	}
 }
 
-/*-------------------------DETAILS MENU------------------------*/
+/*-------------------------CONTENU GENERAL DES MENUS------------------------*/
 #titre_carte{
 	text-align: center;
 	font-size: 3em;
@@ -212,19 +212,19 @@ a{
 	-webkit-text-fill-color:transparent;
 	-webkit-background-clip:text;
 	} 
-	& h1{
+	& h2{
 	font-family: 'Devonshire', cursive;
 	font-size: 4em;
 	line-height: 8px;
 	padding-bottom: 50px;
 	}
-	& h2{
+	& h3{
 	font-family: 'Kalam', cursive;
 	font-weight: bold;
 	font-size: 2.5em;
 	text-align: center;
 	}
-	& h3{
+	& h4{
 	font-family: 'Devonshire', cursive;
 	font-size: 3em;
 	text-align: center;
@@ -243,6 +243,9 @@ a{
 	&__plats__prix{
 		font-weight: bold;	
 	}
+	&__logo{
+
+	}
 }
 
 /*-------------------------CARTE 2 LA NOTE ENCHANTEE-------------------*/
@@ -256,7 +259,7 @@ a{
 	padding: (100px 0 100px 0); 
 	box-shadow: 1px 1px 12px #555;
 	color:#3C1218;
-	& h1{
+	& h2{
 	font-size: 4em;
 	padding-bottom: 50px;
 	background: #c77412; /* Old browsers */
@@ -267,7 +270,7 @@ a{
 	-webkit-text-fill-color:transparent;
 	-webkit-background-clip:text;
 	}
-	& h2{
+	& h3{
 	font-weight: bold;
 	font-size: 2.5em;
 	text-align: center;
@@ -307,7 +310,7 @@ a{
 	padding: (100px 0 100px 0); 
 	box-shadow: 1px 1px 12px #555;
 	color:#000000;
-	& h1{
+	& h2{
 	font-family: 'Dancing Script', cursive;
 	font-size: 5em;
 	padding-bottom: 50px;
@@ -319,7 +322,7 @@ a{
 	-webkit-text-fill-color:transparent;
 	-webkit-background-clip:text;
 	}
-	& h2{
+	& h3{
 	font-size: 1.8em;
 	text-align: center;
 	}
@@ -349,7 +352,7 @@ a{
 	padding: (100px 0 100px 0); 
 	box-shadow: 1px 1px 12px #555;
 	color:#000000;
-	& h1{
+	& h2{
 	font-size: 5em;
 	font-family: 'Kaushan Script', cursive;
 		background: rgb(61,147,57); /* Old browsers */
@@ -378,10 +381,10 @@ a{
 .menu__bloc:hover .detail {
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
-    opacity: .8;
+    opacity: .5;
 }
 
-/*--------------------animation bouton---------------------*/
+/*-------------animation bouton-----------*/
 .btn:after {
     content: '.';
     animation: dots 1s steps(1, end) infinite;
@@ -412,7 +415,7 @@ a{
     }
 }
 
-/*-------------------------animation liens footer-------------------*/
+/*--------------animation liens footer-------------*/
 .footer__contenu:hover {
     animation: shake 0.5s; /*nature, debut et duree de l'animation*/
     animation-iteration-count: infinite; /*boucle de l'animation*/
@@ -433,10 +436,10 @@ a{
   }
 
 /*--------------------animation details menus------------------*/
-.sous_titre h2:hover:after {
+.sous_titre h3:hover:after {
     transform: scaleX(1);
   }
-  .sous_titre h2:after {
+  .sous_titre h3:after {
     content: "";
     width: 100%;
     height: 100%;
@@ -447,11 +450,12 @@ a{
     transform-origin: 0%;
   }
 
-  /*-----------------------RESPONSIVE------------------------*/
-  /*MEDIA QUERIES*/
-@media screen and (max-width: 900px) {
 
-    header {
+
+/*-----------------RESPONSIVE - MEDIA QUERIES-----------------*/
+@media screen and (max-width: 900px) {
+/*----------------general----------------*/
+	header {
     	height: 100px;
     }
     .logo {
@@ -460,31 +464,129 @@ a{
 		font-size: 3em;
     }
 
-	.container{
-		flex-direction: column;
-		justify-content: center;
+	main{
+		padding-bottom: 160px;
 	}
-	.menu{
-	margin: (10px 5px 0 5px);
-	&__bloc{
-		width: 100%;
-		height: 300px;
-		text-align: center;
-		padding: 80px 5px 0 5px;
+
+/*----------------footer----------------*/
+	footer{
+    	height: 70px;
+	}
+
+	.footer__contenu{
+		margin: (0 0 0 0);
+		padding: (0 15px 0 15px);
 		font-size: 1em;
+		line-height: 70px;
+	}
+	
+/*-----------------accueil-----------------*/
+	.menu{
+		margin: (50px 0px 0 0px);
+		&__bloc{
+		height: 260px;
+		width: 280px;
+		margin-bottom: 60px;
+		padding-top: 60px;
+	    }
+		&__bloc--1{
+		background-color: #FCDFDB;
+		line-height: 10px;
+		}
+		&__bloc--1 i{
+
+		}	
+	}
+	.detail{
+	/*blocs menus 1*/
+		&__menu1 h2{
+			font-size: 2em;
+			padding-bottom: 20px;
+		}
+		&__menu1 h3{
+			font-size: 2em;
+		}
+	/*blocs menus 2*/	
+		&__menu2 h2{
+			font-size: 1em;
+		}
+		&__menu2 h3{
+			font-size: 2em;
+		}
+	/*blocs menus 3*/
+		&__menu3 h2{
+			font-size: 2em;
+		}
+		&__menu3 h3{
+			font-size: 2em;
+		}
+	/*blocs menus 4*/
+		&__menu4 h2{
+			font-size: 2em;
+		}
+		&__menu4 h3{
+			font-size: 2em;
+		}
+	}
+/*----------------bouton----------------*/
+	.btn{
+		width: 250px;
+		height: 80px;
+		font-size: 1.5em;
+		line-height: 80px;
+		}
+/*-------------------------CONTENU GENERAL DES MENUS------------------------*/
+	#titre_carte{
+		text-align: center;
+		font-size: 2em;
+		margin: (50px 0 20px 0);
+	}
+
+	.sous_titre{
+		flex-direction: column;
+		justify-content: none;
+		margin-top: -30px;
+		line-height: 10px;
+		&__deco{
+			width: 200px;
+			height: auto;
 		}
 	}
 
-	.container{
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-end;
+/*-------------------------CARTE 1 LA NOTE ENCHANTEE-------------------*/
+	.carte1, .carte2, .carte3, .carte4 {
+		width: 98%;
+		height: auto;
+		padding: (100px 0 100px 0);
+		& h2{
+		display: none;
+		}
+		& h3{
+		font-size: 1.5em;
+		}
+		& h4{
+		font-size: 2em;
+		}
+		&__contenu{
+			font-size: 1.3em;
+			text-align: center;
+			padding: (0 5px 40px 5px);
+		}
+		&__plats{
+			flex-direction: column;
+			justify-content: none;
+			line-height: 30px;
+		}
+		&__plats__prix{
+			font-size: 1.6em;
+			margin-top:2px; 
+		}
 	}
+	#note_music{
+		display: none;
+	}
+}
+	
 
-	footer{
-		height: 90px;
-		position:fixed;
-		bottom:0;
-		width:100%;
-	}
-}	
+
+
