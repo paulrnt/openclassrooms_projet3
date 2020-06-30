@@ -451,7 +451,20 @@ a{
 
 
 /*-----------------RESPONSIVE - MEDIA QUERIES-----------------*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1500px) {
+	.container{
+		justify-content: space-between;
+		}
+}
+
+@media screen and (min-width: 600px) {
+	.container{
+		margin: auto;
+		justify-content: space-around;
+		}
+}
+
+@media screen and (max-width: 600px) {
 /*----------------general----------------*/
 	header {
     	height: 100px;
@@ -464,8 +477,6 @@ a{
 
 	main{
 		padding-bottom: 160px;
-		flex-direction: column;
-		max-width: 60%;
 	}
 
 /*----------------footer----------------*/
@@ -481,6 +492,11 @@ a{
 	}
 	
 /*-----------------accueil-----------------*/
+	.container{
+		margin: auto;
+		justify-content: space-around;
+		}
+
 	.menu{
 		margin: (50px 0px 0 0px);
 		&__bloc{

@@ -429,7 +429,14 @@ a {
   transform-origin: 0%; }
 
 /*-----------------RESPONSIVE - MEDIA QUERIES-----------------*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1500px) {
+  .container {
+    justify-content: space-between; } }
+@media screen and (min-width: 600px) {
+  .container {
+    margin: auto;
+    justify-content: space-around; } }
+@media screen and (max-width: 600px) {
   /*----------------general----------------*/
   header {
     height: 100px; }
@@ -440,9 +447,7 @@ a {
     font-size: 3em; }
 
   main {
-    padding-bottom: 160px;
-    flex-direction: column;
-    max-width: 60%; }
+    padding-bottom: 160px; }
 
   /*----------------footer----------------*/
   footer {
@@ -455,6 +460,10 @@ a {
     line-height: 70px; }
 
   /*-----------------accueil-----------------*/
+  .container {
+    margin: auto;
+    justify-content: space-around; }
+
   .menu {
     margin: 50px 0px 0 0px; }
     .menu__bloc {
