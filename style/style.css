@@ -13,9 +13,11 @@ header {
 
 main {
   min-height: 100%;
+  max-width: 90%;
   margin: auto;
   position: relative;
-  padding-bottom: 200px; }
+  padding: 0 0 200px 0;
+  justify-content: space-between; }
 
 footer {
   background: #579C87;
@@ -351,16 +353,12 @@ a {
 /*-----------------ANIMATIONS-----------------*/
 /*---------------animation menus-------------*/
 .detail {
-  -webkit-transform: scale(1);
   transform: scale(1);
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   opacity: 1;
-  -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out; }
 
 .menu__bloc:hover .detail {
-  -webkit-transform: scale(1.4);
   transform: scale(1.4);
   opacity: .5; }
 
@@ -431,7 +429,7 @@ a {
   transform-origin: 0%; }
 
 /*-----------------RESPONSIVE - MEDIA QUERIES-----------------*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   /*----------------general----------------*/
   header {
     height: 100px; }
@@ -442,7 +440,9 @@ a {
     font-size: 3em; }
 
   main {
-    padding-bottom: 160px; }
+    padding-bottom: 160px;
+    flex-direction: column;
+    max-width: 60%; }
 
   /*----------------footer----------------*/
   footer {
@@ -504,7 +504,6 @@ a {
 
   .sous_titre {
     flex-direction: column;
-    justify-content: none;
     margin-top: -30px;
     line-height: 10px; }
     .sous_titre__deco {
@@ -528,7 +527,6 @@ a {
       padding: 0 5px 40px 5px; }
     .carte1__plats, .carte2__plats, .carte3__plats, .carte4__plats {
       flex-direction: column;
-      justify-content: none;
       line-height: 30px; }
     .carte1__plats__prix, .carte2__plats__prix, .carte3__plats__prix, .carte4__plats__prix {
       font-size: 1.6em;

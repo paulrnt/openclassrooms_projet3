@@ -17,9 +17,11 @@ header{
 
 main{
 	min-height:100%;
+	max-width: 90%;
 	margin: auto;
 	position: relative;
-	padding-bottom: 200px;
+	padding: (0 0 200px 0);
+	justify-content: space-between;
 }
 
 footer{
@@ -369,17 +371,13 @@ a{
 
 /*---------------animation menus-------------*/
 .detail {
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
     opacity: 1;
-    -webkit-transition: 1s ease-in-out;
     transition: 1s ease-in-out;
 }
 
 .menu__bloc:hover .detail {
-    -webkit-transform: scale(1.4);
     transform: scale(1.4);
     opacity: .5;
 }
@@ -453,7 +451,7 @@ a{
 
 
 /*-----------------RESPONSIVE - MEDIA QUERIES-----------------*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
 /*----------------general----------------*/
 	header {
     	height: 100px;
@@ -466,6 +464,8 @@ a{
 
 	main{
 		padding-bottom: 160px;
+		flex-direction: column;
+		max-width: 60%;
 	}
 
 /*----------------footer----------------*/
@@ -544,7 +544,6 @@ a{
 
 	.sous_titre{
 		flex-direction: column;
-		justify-content: none;
 		margin-top: -30px;
 		line-height: 10px;
 		&__deco{
@@ -574,7 +573,6 @@ a{
 		}
 		&__plats{
 			flex-direction: column;
-			justify-content: none;
 			line-height: 30px;
 		}
 		&__plats__prix{
