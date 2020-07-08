@@ -216,14 +216,14 @@ a{
 	} 
 	& h2{
 	font-family: 'Devonshire', cursive;
-	font-size: 4em;
+	font-size: 3em;
 	line-height: 8px;
 	padding-bottom: 50px;
 	}
 	& h3{
 	font-family: 'Kalam', cursive;
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 1.5em;
 	text-align: center;
 	}
 	& h4{
@@ -233,7 +233,7 @@ a{
 	}
 	&__contenu{
 		font-family: 'Kalam', cursive;
-		font-size: 1.8em;
+		font-size: 1.5em;
 		text-align: left;
 		padding: (0 100px 50px 100px);
 	}
@@ -250,7 +250,25 @@ a{
 	}
 }
 
-/*-------------------------CARTE 2 LA NOTE ENCHANTEE-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------CARTE 2 LE CHIC A LA FRANCAISE-------------------*/
 .carte2{ 
 	font-family: 'Aref Ruqaa', serif;
 	text-align: center;
@@ -262,7 +280,7 @@ a{
 	box-shadow: 1px 1px 12px #555;
 	color:#3C1218;
 	& h2{
-	font-size: 4em;
+	font-size: 3em;
 	padding-bottom: 50px;
 	background: #c77412; /* Old browsers */
 	background: -moz-linear-gradient(left,  #c77412 0%, #905bfd 100%); /* FF3.6-15 */
@@ -274,13 +292,8 @@ a{
 	}
 	& h3{
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 1.8em;
 	text-align: center;
-	}
-	&__contenu{
-		font-size: 1.8em;
-		text-align: left;
-		padding: (0 100px 50px 100px);
 	}
 	&__contenu--1{
 		color:#C67412;
@@ -295,6 +308,9 @@ a{
 		display: flex;
 		justify-content: space-between;
 		line-height: 10px;
+		font-size: 1.5em;
+		text-align: left;
+		padding: (0 100px 50px 100px);
 	}
 	&__plats__prix{
 		font-weight: bold;	
@@ -314,7 +330,7 @@ a{
 	color:#000000;
 	& h2{
 	font-family: 'Dancing Script', cursive;
-	font-size: 5em;
+	font-size: 3em;
 	padding-bottom: 50px;
 	background: rgb(0,0,224); /* Old browsers */
 	background: -moz-linear-gradient(left,  rgba(0,0,224,1) 0%, rgba(8,135,251,1) 100%); /* FF3.6-15 */
@@ -328,15 +344,13 @@ a{
 	font-size: 1.8em;
 	text-align: center;
 	}
-	&__contenu{
-		font-size: 1.8em;
-		text-align: left;
-		padding: (0 100px 100px 100px);
-	}
 	&__plats{
 		display: flex;
 		justify-content: space-between;
 		line-height: 10px;
+		font-size: 1.5em;
+		text-align: left;
+		padding: (0 100px 50px 100px);
 	}
 	&__plats__prix{
 		font-weight: bold;	
@@ -470,15 +484,20 @@ a{
 		height: auto;
 		padding: (100px 0 100px 0);
 		& h2{
-		display: none;
+			display: none;
+		}
+		& h3{
+			font-size: 2em;
+			line-height: 60px;
 		}
 		&__contenu{
-			text-align: center;
-			padding: (0 5px 40px 5px);
+			padding: (0 5px 50px 5px);
 		}
 		&__plats{
 			flex-direction: column;
 			line-height: 30px;
+			text-align: center;
+			padding: (0 0 5px 0);
 		}
 		&__plats__prix{
 			font-size: 1.6em;
@@ -602,8 +621,10 @@ a{
 		& h4{
 		font-size: 2em;
 		}
-		&__contenu{
+		&__plats{
 		font-size: 1em;
+		padding: (0 5px 0px 5px);
+		text-align: center;
 		}
 	}
 }
