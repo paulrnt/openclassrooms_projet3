@@ -543,10 +543,10 @@ a {
   .carte1, .carte2, .carte3, .carte4 {
     width: 98%; }
     .carte1 h3, .carte2 h3, .carte3 h3, .carte4 h3 {
-      font-size: 1.5em; }
+      font-size: 1.2em; }
     .carte1 h4, .carte2 h4, .carte3 h4, .carte4 h4 {
       font-size: 2em; }
     .carte1__contenu, .carte2__contenu, .carte3__contenu, .carte4__contenu {
-      font-size: 1.3em; } }
+      font-size: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
