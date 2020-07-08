@@ -454,12 +454,6 @@ a{
 		}
 
 /*-------------------------CONTENU GENERAL DES MENUS------------------------*/
-	#titre_carte{
-		text-align: center;
-		font-size: 2em;
-		margin: (50px 0 20px 0);
-	}
-
 	.sous_titre{
 		flex-direction: column;
 		margin-top: -30px;
@@ -470,22 +464,15 @@ a{
 		}
 	}
 
-/*-------------------------CARTE 1 LA NOTE ENCHANTEE-------------------*/
+/*-------------------------CARTES-------------------*/
 	.carte1, .carte2, .carte3, .carte4 {
-		width: 98%;
+		width: 90%;
 		height: auto;
 		padding: (100px 0 100px 0);
 		& h2{
 		display: none;
 		}
-		& h3{
-		font-size: 1.5em;
-		}
-		& h4{
-		font-size: 2em;
-		}
 		&__contenu{
-			font-size: 1.3em;
 			text-align: center;
 			padding: (0 5px 40px 5px);
 		}
@@ -503,12 +490,14 @@ a{
 	}
 }
 
+
 @media screen and (min-width: 600px) {
 	.container{
 		margin: auto;
 		justify-content: space-around;
 		}
 }
+
 
 @media screen and (max-width: 600px) {
 /*----------------general----------------*/
@@ -597,9 +586,29 @@ a{
 		font-size: 1.5em;
 		line-height: 80px;
 		}
+/*-------------------------CONTENU GENERAL DES MENUS------------------------*/
+	#titre_carte{
+		text-align: center;
+		font-size: 2em;
+		margin: (50px 0 20px 0);
+		}
 
+/*-------------------------CARTE 1 LA NOTE ENCHANTEE-------------------*/
+	.carte1, .carte2, .carte3, .carte4 {
+		width: 98%;
+		& h3{
+		font-size: 1.5em;
+		}
+		& h4{
+		font-size: 2em;
+		}
+		&__contenu{
+			font-size: 1.3em;
+		}
+	}
 }
 	
+
 
 
 

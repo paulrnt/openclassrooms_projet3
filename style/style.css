@@ -433,11 +433,6 @@ a {
     justify-content: space-between; }
 
   /*-------------------------CONTENU GENERAL DES MENUS------------------------*/
-  #titre_carte {
-    text-align: center;
-    font-size: 2em;
-    margin: 50px 0 20px 0; }
-
   .sous_titre {
     flex-direction: column;
     margin-top: -30px;
@@ -446,19 +441,14 @@ a {
       width: 200px;
       height: auto; }
 
-  /*-------------------------CARTE 1 LA NOTE ENCHANTEE-------------------*/
+  /*-------------------------CARTES-------------------*/
   .carte1, .carte2, .carte3, .carte4 {
-    width: 98%;
+    width: 90%;
     height: auto;
     padding: 100px 0 100px 0; }
     .carte1 h2, .carte2 h2, .carte3 h2, .carte4 h2 {
       display: none; }
-    .carte1 h3, .carte2 h3, .carte3 h3, .carte4 h3 {
-      font-size: 1.5em; }
-    .carte1 h4, .carte2 h4, .carte3 h4, .carte4 h4 {
-      font-size: 2em; }
     .carte1__contenu, .carte2__contenu, .carte3__contenu, .carte4__contenu {
-      font-size: 1.3em;
       text-align: center;
       padding: 0 5px 40px 5px; }
     .carte1__plats, .carte2__plats, .carte3__plats, .carte4__plats {
@@ -541,6 +531,22 @@ a {
     width: 250px;
     height: 80px;
     font-size: 1.5em;
-    line-height: 80px; } }
+    line-height: 80px; }
+
+  /*-------------------------CONTENU GENERAL DES MENUS------------------------*/
+  #titre_carte {
+    text-align: center;
+    font-size: 2em;
+    margin: 50px 0 20px 0; }
+
+  /*-------------------------CARTE 1 LA NOTE ENCHANTEE-------------------*/
+  .carte1, .carte2, .carte3, .carte4 {
+    width: 98%; }
+    .carte1 h3, .carte2 h3, .carte3 h3, .carte4 h3 {
+      font-size: 1.5em; }
+    .carte1 h4, .carte2 h4, .carte3 h4, .carte4 h4 {
+      font-size: 2em; }
+    .carte1__contenu, .carte2__contenu, .carte3__contenu, .carte4__contenu {
+      font-size: 1.3em; } }
 
 /*# sourceMappingURL=style.css.map */
