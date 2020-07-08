@@ -217,21 +217,21 @@ a {
   .carte1 h3 {
     font-family: 'Kalam', cursive;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center; }
   .carte1 h4 {
     font-family: 'Devonshire', cursive;
     font-size: 3em;
     text-align: center; }
   .carte1__contenu {
-    font-family: 'Kalam', cursive;
-    font-size: 1.5em;
-    text-align: left;
-    padding: 0 100px 50px 100px; }
+    font-family: 'Kalam', cursive; }
   .carte1__plats {
     display: flex;
     justify-content: space-between;
-    line-height: 10px; }
+    line-height: 10px;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0 100px 50px 100px; }
   .carte1__plats__prix {
     font-weight: bold; }
 
@@ -263,7 +263,7 @@ a {
     -webkit-background-clip: text; }
   .carte2 h3 {
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 2em;
     text-align: center; }
   .carte2__contenu--1 {
     color: #C67412; }
@@ -309,7 +309,7 @@ a {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text; }
   .carte3 h3 {
-    font-size: 1.8em;
+    font-size: 2em;
     text-align: center; }
   .carte3__plats {
     display: flex;
@@ -541,7 +541,7 @@ a {
     font-size: 2em;
     margin: 50px 0 20px 0; }
 
-  /*-------------------------CARTE 1 LA NOTE ENCHANTEE-------------------*/
+  /*-------------------------CARTES-------------------*/
   .carte1, .carte2, .carte3, .carte4 {
     width: 98%; }
     .carte1 h3, .carte2 h3, .carte3 h3, .carte4 h3 {
