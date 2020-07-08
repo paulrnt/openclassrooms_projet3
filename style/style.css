@@ -169,7 +169,7 @@ a {
   font-family: 'Roboto', sans-serif; }
   .footer__contenu {
     margin: 0 40px 0 40px;
-    font-size: 2.3em;
+    font-size: 2em;
     line-height: 90px;
     color: #FDCB46; }
 
@@ -461,7 +461,22 @@ a {
       margin-top: 2px; }
 
   #note_music {
-    display: none; } }
+    display: none; }
+
+  footer {
+    height: 70px; }
+
+  .footer__contenu {
+    margin: 0 0 0 0;
+    padding: 0 15px 0 15px;
+    font-size: 1.5em;
+    line-height: 70px; }
+
+  .btn {
+    width: 400px;
+    height: 100px;
+    font-size: 1.8em;
+    line-height: 100px; } }
 @media screen and (min-width: 600px) {
   .container {
     margin: auto;
