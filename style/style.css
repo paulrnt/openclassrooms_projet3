@@ -355,8 +355,7 @@ a {
 .detail {
   transform: scale(1);
   transition: 1s ease-in-out;
-  opacity: 1;
-  transition: 1s ease-in-out; }
+  opacity: 1; }
 
 .menu__bloc:hover .detail {
   transform: scale(1.4);
@@ -431,7 +430,46 @@ a {
 /*-----------------RESPONSIVE - MEDIA QUERIES-----------------*/
 @media screen and (max-width: 1500px) {
   .container {
-    justify-content: space-between; } }
+    justify-content: space-between; }
+
+  /*-------------------------CONTENU GENERAL DES MENUS------------------------*/
+  #titre_carte {
+    text-align: center;
+    font-size: 2em;
+    margin: 50px 0 20px 0; }
+
+  .sous_titre {
+    flex-direction: column;
+    margin-top: -30px;
+    line-height: 10px; }
+    .sous_titre__deco {
+      width: 200px;
+      height: auto; }
+
+  /*-------------------------CARTE 1 LA NOTE ENCHANTEE-------------------*/
+  .carte1, .carte2, .carte3, .carte4 {
+    width: 98%;
+    height: auto;
+    padding: 100px 0 100px 0; }
+    .carte1 h2, .carte2 h2, .carte3 h2, .carte4 h2 {
+      display: none; }
+    .carte1 h3, .carte2 h3, .carte3 h3, .carte4 h3 {
+      font-size: 1.5em; }
+    .carte1 h4, .carte2 h4, .carte3 h4, .carte4 h4 {
+      font-size: 2em; }
+    .carte1__contenu, .carte2__contenu, .carte3__contenu, .carte4__contenu {
+      font-size: 1.3em;
+      text-align: center;
+      padding: 0 5px 40px 5px; }
+    .carte1__plats, .carte2__plats, .carte3__plats, .carte4__plats {
+      flex-direction: column;
+      line-height: 30px; }
+    .carte1__plats__prix, .carte2__plats__prix, .carte3__plats__prix, .carte4__plats__prix {
+      font-size: 1.6em;
+      margin-top: 2px; }
+
+  #note_music {
+    display: none; } }
 @media screen and (min-width: 600px) {
   .container {
     margin: auto;
@@ -503,45 +541,6 @@ a {
     width: 250px;
     height: 80px;
     font-size: 1.5em;
-    line-height: 80px; }
-
-  /*-------------------------CONTENU GENERAL DES MENUS------------------------*/
-  #titre_carte {
-    text-align: center;
-    font-size: 2em;
-    margin: 50px 0 20px 0; }
-
-  .sous_titre {
-    flex-direction: column;
-    margin-top: -30px;
-    line-height: 10px; }
-    .sous_titre__deco {
-      width: 200px;
-      height: auto; }
-
-  /*-------------------------CARTE 1 LA NOTE ENCHANTEE-------------------*/
-  .carte1, .carte2, .carte3, .carte4 {
-    width: 98%;
-    height: auto;
-    padding: 100px 0 100px 0; }
-    .carte1 h2, .carte2 h2, .carte3 h2, .carte4 h2 {
-      display: none; }
-    .carte1 h3, .carte2 h3, .carte3 h3, .carte4 h3 {
-      font-size: 1.5em; }
-    .carte1 h4, .carte2 h4, .carte3 h4, .carte4 h4 {
-      font-size: 2em; }
-    .carte1__contenu, .carte2__contenu, .carte3__contenu, .carte4__contenu {
-      font-size: 1.3em;
-      text-align: center;
-      padding: 0 5px 40px 5px; }
-    .carte1__plats, .carte2__plats, .carte3__plats, .carte4__plats {
-      flex-direction: column;
-      line-height: 30px; }
-    .carte1__plats__prix, .carte2__plats__prix, .carte3__plats__prix, .carte4__plats__prix {
-      font-size: 1.6em;
-      margin-top: 2px; }
-
-  #note_music {
-    display: none; } }
+    line-height: 80px; } }
 
 /*# sourceMappingURL=style.css.map */
